@@ -1,0 +1,27 @@
+menu "Garagedoor Configuration"
+
+config GARAGEDOOR_WIFI_SSID
+    string "Wifi SSID"
+    default "wifissid"
+    help
+    SSID (network name) to connect to
+
+config GARAGEDOOR_WIFI_PASSWORD
+    string "Wifi password"
+    default "wifipassword"
+    help
+    Wifi password (WPA or WPA2) to use
+
+config GARAGEDOOR_SERVERNAME
+    string "Garage door opener hostname"
+    default "garagedoor"
+    help
+    Hostname of garage door opener
+
+config GARAGEDOOR_PORT
+    int "Port number"
+    default 33103
+    help
+    Port number for garagedoor host
+
+endmenu
